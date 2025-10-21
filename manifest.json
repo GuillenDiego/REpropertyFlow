@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Zillow Address → Webhook",
+  "version": "1.0.0",
+  "description": "Extracts the Zillow property address (street, city, state, zip) and sends it to a webhook.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": [
+    "https://YOUR_WEBHOOK_HOST/*"
+  ],
+  "action": {
+    "default_title": "Send Zillow Address"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
